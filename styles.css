@@ -48,6 +48,18 @@ section {
     height: auto;
 }
 
+.nahtavyydet {
+    background-color: #FF9999;
+}
+
+.ravintolat {
+    background-color: #DFD9D7;
+}
+
+.aktiviteetit {
+    background-color: #66CCFF;
+}
+
 footer {
     text-align: center;
     padding: 10px;
