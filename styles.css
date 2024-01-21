@@ -9,6 +9,12 @@ header {
     background-color: #f8f9fa; /* Bootstrap vaaleampi tausta */
 }
 
+/* logon koon säätäminen kohdilleen tästä */
+header img {
+    max-width: 150px;
+    width: 100%;
+  }
+
 nav {
     margin: 10px 0;
 }
@@ -62,6 +68,7 @@ section {
 
 footer {
     text-align: center;
+    margin-top: 20px;
     padding: 10px;
     padding-bottom: 4px; /* Lisäsin bottom-paddingia */
     background-color: #000000; /* Suunnitelman mukainen */
