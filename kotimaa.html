@@ -3,25 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrapin linkki ja scripti-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Kotimaa</title>
+    <!-- Kommentoin pois
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WytkY5BNVVr+O6qt3Xv2Orl44S9s5y"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+        crossorigin="anonymous"> 
+    
+    <link rel="stylesheet" href="styles.css"> -->
+    
 </head>
+<!-- Tyylikokeilut-->
+<style>
+
+    header {
+        text-align: center;
+    }
+
+    .nahtavyydet{
+        background-color: #FF9999;
+        margin: 10px;
+    }
+    
+    .ravintolat{
+        background-color: #DFD9D7;
+        margin: 10px;
+    }
+
+    .aktiviteetit{
+        background-color: #66CCFF;
+        margin: 10px;
+    }
+
+    footer {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+    }
+   
+</style>
+
 <body>
 
     <header>
-        <h1>Matkailusivusto</h1>
+        <img src="/images/kotimaa_kuvat/Logo.png" alt="Logo">
+        <h1>Out Of The Ordinary</h1>
+        <h2>-Maailman paras matkailusivusto-</h2>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Pääsivu</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="kotimaa.html">Kotimaa</a>
                 </li>
                 <li class="nav-item">
@@ -34,122 +73,138 @@
         </div>
     </nav>
 
-    <h1>Suomen erikoisimmat:</h1>
-
-    <div>
+    <div class="container-md  p-3 ">
+        <h1>Suomen erikoisimmat:</h1>
         <h2>Nähtävyydet</h2>
 
+        <div class="row p-3 text-center">
+
+            <article class="nahtavyydet col-sm ">
+                <h3>Suomineidon napa</h3>
+                <img src="/images/kotimaa_kuvat/suomineito.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Tule tutkimaan Suomineidon napaa eli Suomen keskipistettä.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+
+
+            <article class="nahtavyydet col-sm">
+                <h3>Lorauslohkare</h3>
+                <img src="/images/kotimaa_kuvat/lohkare.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Kukapa ei haluaisi nähdä kiveä, johon joku tärkeä henkilö on joskus muinoin pissannut?</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+          
         
-        <h3>Suomen keskipiste</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-        voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-        repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-        <a href="#" class="btn btn-success">Lue lisää</a>
+            <article class="nahtavyydet col-sm">
+                <h3>Halimuu</h3>
+                <img src="/images/kotimaa_kuvat/halimuu.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Mikä voisi rentouttaa paremmin kuin lehmien halailu? Tule adoptoimaan oma halilehmä.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
 
-        <h3>Kusikivi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-        voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-        repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-        <a href="#" class="btn btn-success">Lue lisää</a>
+            <article class="nahtavyydet col-sm">
+                <h3>Suomen muotoinen pilvi</h3>
+                <img src="/images/kotimaa_kuvat/suomipilvi.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Tämän nähtävyyden erikoisuus on se, että se vaihtaa paikkaa.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+     
+            <article class="nahtavyydet col-sm">
+                <h3>Kalavaleen patsaspuisto</h3>
+                <img src="/images/kotimaa_kuvat/kalavale.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Kahdenkymmenen vuoden edestä kala-aiheisia patsaita. Täällä et joudu olemaan yksin!</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+        </div>
 
-        <h3>Halipuu</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-        voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-        repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-        <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Neitokainen-järvi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-        voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-        repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-        <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Parikkalan patsaspuisto</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-        voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-        repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-        <a href="#" class="btn btn-success">Lue lisää</a>
-    </div>
-    
-    <div>
         <h2>Ravintolat</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Ravintola Kuappi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Ice Restaurant</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Ravintola Näsinneula</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Manala</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Linnankellari</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-    </div>
     
-    <div>
+        <div class="row p-3 text-center">
+            
+            <article class="ravintolat col-sm">
+                <h3>Ravintola Piironki</h3>
+                <img src="/images/kotimaa_kuvat/piironki.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Maailman pienin ravintola sijaitsee vanhassa piirongissa. 
+                    Syömään mahtuu yksi henkilö kerrallaan, joten isomman seurueen täytyy vuorotella.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+
+            <article class="ravintolat col-sm">
+                <h3>Ravintola Lumiukko</h3>
+                <img src="/images/kotimaa_kuvat/lumiukko.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Jos lumi ja jää eivät haittaa, niin sinua kutsuu jäästä tehty ravintola Lumiukko.
+                    Täällä nopeus on valttia, jotta ehdit syödä ennen kuin ruokasi jäätyy!</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+
+            <article class="ravintolat col-sm">
+                <h3>Ravintola Tikunnokka</h3>
+                <img src="/images/kotimaa_kuvat/tikunnokka.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Tule aterioimaan Suomen korkeimpaan rakennukseen. Pääset nauttimaan maukkaan ruuan lisäksi maisemista korkeuksista käsin.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+
+            <article class="ravintolat col-sm">
+                <h3>Ravintola Salmiakki</h3>
+                <img src="/images/kotimaa_kuvat/salmiakki.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Tämä ravintola hyödyntää menussaan suomalaisten suosimaa salmikkia.</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+
+            <article class="ravintolat col-sm">
+                <h3>Ravintola Väärävaara</h3>
+                <img src="/images/kotimaa_kuvat/vaara.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Haluatko syömään upeisiin maisemiin vaaran laelle? Väärävaarassa se onnistuu. 
+                    Huomioithan kuitenkin, että reitti ei ole esteetön.</p>
+                <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
+        </div>
+
         <h2>Aktiviteetit</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
+    
+        <div class="row p-3 text-center">
+           
+            
+            <article class="aktiviteetit col-sm">
+                <h3>Saunapuumaja</h3>
+                <img src="/images/kotimaa_kuvat/sauna.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Oletko aina halunnut saunoa samalla, kun leikit puumajassa? No nyt se on mahdollista!</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
 
-        <h3>Saunagondoli</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
+            <article class="aktiviteetit col-sm">
+                <h3>Havuja perskules hiihtovaellus</h3>
+                <img src="/images/kotimaa_kuvat/" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Jos haluat päästä testaamaan Suomalaista Sisua, niin tämä vaellus on sinua varten!</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
 
-        <h3>Laamavaellus</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
+            <article class="aktiviteetit col-sm">
+                <h3>Avantokuviokellunta</h3>
+                <img src="/images/kotimaa_kuvat/kellunta.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Nyt saat luvan kanssa olla tekemättä mitään! Muista kuitenkin aktiviteetin lyhyt aikaraja..</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
 
-        <h3>Vuoksikellunta</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
+            <article class="aktiviteetit col-sm">
+                <h3>Citykanin kaupunkiseikkailu</h3>
+                <img src="/images/kotimaa_kuvat/kani.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Jos kaipaat seikkailua keskellä kaupunkia, niin lähde Citykanin matkaan.!</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a>
+            </article>
 
-        <h3>FoxTrail kaupunkiseikkailu Helsingissä</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-
-        <h3>Huvivaltio PowerPark -Suomen suurin huvipuisto</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam inventore fugiat, <br>
-            voluptatibus nobis et error aspernatur esse voluptatem, animi culpa deserunt, <br>
-            repellat pariatur sed eum. Eveniet aliquid repudiandae sint cupiditate?</p>
-            <a href="#" class="btn btn-success">Lue lisää</a>
-    </div>  
+            <article class="aktiviteetit col-sm">
+                <h3>Huvitalo KaleVala</h3>
+                <img src="placeholder-image.jpg" class="mx-auto" alt="Kuva kohteesta" width="200" height="150">
+                <p>Koko perheelle sopiva huvitalo on täynnä hassun hauskaa tekemistä Kalevalaisten hahmojen kanssa.</p>
+                    <a href="#" class="btn btn-dark">Lue lisää</a> 
+                </article>
+        </div>
+    </div> 
 
     <footer>
         <p>&copy; 2024 Matkailusivusto. Kaikki oikeudet pidätetään.</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
