@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Maailman Paras Matkailusivusto</title>
-    <!-- Kommentoin pois
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WytkY5BNVVr+O6qt3Xv2Orl44S9s5y"
-        crossorigin="anonymous">-->
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -30,34 +27,43 @@
 
 
 
+
 <body>
 
     <header>
-        <!-- Headeriin logo ja tekstit. Kuva vielä väärässä paikassa -->
-        <img src="/images/kotimaa_kuvat/Logo.png" alt="Logo">
-        <h1>Out Of The Ordinary</h1>
-        <h2>-Maailman paras matkailusivusto-</h2>
+        <!-- Headeriin logo ja tekstit. Kuvan voi koittaa siirtää images kansioon, ittellä ei toiminu jostain käsittämättömästä syystä -Sami -->
+        <div class="container d-flex align-items-center justify-content-center">    
+            <img src="Logo_placeholder.png" alt="Logo" class="mt-2 mb-2">
+            <div class="text-center">
+                <h1>Out Of The Ordinary</h1>
+                <h2>-Maailman paras matkailusivusto-</h2>
+            </div>
+        </div>
     </header>
 
     <!-- Navin värien vaihto -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-
-        <!-- Navin keskitys -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Etusivu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kotimaa.html">Kotimaa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ulkomaat">Ulkomaat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="avaruus.html">Avaruus</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container img-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kotimaa.html">Kotimaa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ulkomaat.html">Ulkomaat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="avaruus.html">Avaruus</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -73,7 +79,7 @@
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem natus, 
                         error hic eaque eos dolor rerum veritatis earum temporibus sequi quisquam quis quos minus unde! 
                         Totam natus officiis iure doloribus!</p>
-                    <a href="#" class="btn btn-dark">Lue lisää</a>
+                    <a href="kotimaa.html" class="btn btn-dark">Lue lisää</a>
                     </div>
                 </div>
             </div>
@@ -81,12 +87,13 @@
             <div class="col-lg-4">
                 <div class="card grey" style="width:400px">
                     <h4 class="card-title mt-2">Ulkomaat</h4>
-                    <img src="images/sukeltaja-paineessa.jpeg" class="mx-auto" alt="sukeltaja paineessa" width="300" height="200">
+                    <img src="images/ulkomaat_kuvat/Omituinen_matkaaja.jpeg" class="mx-auto" alt="sukeltaja paineessa" width="300" height="200">
                     <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem natus, 
-                        error hic eaque eos dolor rerum veritatis earum temporibus sequi quisquam quis quos minus unde! 
-                        Totam natus officiis iure doloribus!</p>
-                    <a href="#" class="btn btn-dark">Lue lisää</a>
+                    <p class="card-text">Lähde käymään jossain, niin tiedät käyneesi! Oli se sitten lähelle tai kauas,
+                        niin täältä löydät kohteita parempaan makuun.
+                        <p>Ravintolasuosituksia, aktiviteetteja sekä nähtävyyksiä löydät klikkaamalla alta.</p>
+                    </p>
+                    <a href="ulkomaat.html" class="btn btn-dark">Lue lisää</a>
                     </div>
                 </div>
             </div>
@@ -94,57 +101,18 @@
             <div class="col-lg-4">
                 <div class="card blue" style="width:400px">
                     <h4 class="card-title mt-2">Avaruus</h4>
-                    <img src="images/Ranta copy.jpg" class="mx-auto" alt="Ranta" width="300" height="200">
+                    <img src="images/Ranta_copy.jpg" class="mx-auto" alt="Ranta" width="300" height="200">
                     <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem natus, 
                         error hic eaque eos dolor rerum veritatis earum temporibus sequi quisquam quis quos minus unde! 
                         Totam natus officiis iure doloribus!</p>
-                    <a href="#" class="btn btn-dark">Lue lisää</a>
+                    <a href="avaruus.html" class="btn btn-dark">Lue lisää</a>
                     </div>
                 </div>
             </div>       
         </section>
     </div>
 
-
-
-    <!-- <section id="kotimaa" class="mb-4">
-        <h2 class="mb-4">Kotimaan Kohteet</h2>
-        <div class="row">
-            <div class="col-md-6 order-md-1">
-                <img src="placeholder-image.jpg" alt="Kohde 1">
-            </div>
-            <div class="col-md-6 order-md-2">
-                <p>Tekstiä kuvaukseen...</p>
-            </div>
-        </div>
-    </section> -->
-<!-- Testailen kuvien asettumista ja muuta tässä etusivulla -Sami -->
-    <!-- <section id="ulkomaat" class="mb-4">
-        <h2 class="mb-4">Ulkomaiden Kohteet</h2>
-        <div class="row">
-            <div class="col-md-6 order-md-2">
-                <p>Onko paineita? Lähde lomalle ulkomaille, niin tiedät
-                    käyneesi!
-                </p>
-            </div>
-            <div class="col-md-6 order-md-1">
-                <img src="images/sukeltaja-paineessa.jpeg" alt="sukeltaja paineessa">
-            </div>
-        </div>
-    </section>
-
-    <section id="avaruus">
-        <h2 class="mb-4">Avaruuden Kohteet</h2>
-        <div class="row">
-            <div class="col-md-6 order-md-1">
-                <img src="placeholder-image.jpg" alt="Kohde 3">
-            </div>
-            <div class="col-md-6 order-md-2">
-                <p>Tekstiä kuvaukseen...</p>
-            </div>
-        </div>
-    </section> -->
 
     <footer>
         <p>&copy; 2024 Matkailusivusto. Kaikki oikeudet pidätetään.</p>
