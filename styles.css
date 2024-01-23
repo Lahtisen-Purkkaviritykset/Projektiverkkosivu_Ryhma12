@@ -26,6 +26,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     color: white;
+    
 }
 
 nav li {
@@ -38,11 +39,16 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    padding: 10px;
 }
 
 
-/*Navin linkkien väri*/
-a:link{color: rgb(255, 255, 255);}
+/*Navin linkkien väri.*/
+.nav-link {
+    color:white;
+    font-size: large;
+    margin-right: 40px;
+        }
 
 
 
