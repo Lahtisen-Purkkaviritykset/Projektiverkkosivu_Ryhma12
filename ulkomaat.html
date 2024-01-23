@@ -25,9 +25,6 @@
         </div>
     </header>
 
-    
-
-    <!-- Navin värien vaihto -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#"></a>
@@ -53,186 +50,157 @@
         </div>
     </nav>
 
-
-
-    <div class="container md-1"><h2 class="erikoisimmat">Ulkomaiden ihmeitä</h2></div>
-
-    <div class="container mt-5"><h3>Nähtävyydet</h3></div>
-
+    <!-- Pääkontti --> <!-- Muutettu pääkontiksi, asetukset täsmäämään ja semanttiseksi (article ja section) -->
+    <section class="container mt-4">
+        <h3 class="erikoisimmat">Ulkomaiden ihmeitä</h3>
+        <h4>Nähtävyydet</h4>
     
-    <div class="container mt-5">
-        <div class="row grid gap-5 justify-content-end flex">
-            
+        <div class="row gap-5 mt-3 mb-3">
             <!-- Nähtävyys 1 -->
-            <div class="col-md-2 p-4 nahtavyydet">
-                <h4>Giant’s Causeway</h4>
+            <article class="col-md p-4 nahtavyydet">
+                <h5>Giant’s Causeway</h5>
                 <img class="img-fluid" src="images/ulkomaat_kuvat/Giants_Causeway.jpg" alt="Kulmikkaita pylväitä" width="1000">
                 <p>Tekeekö mielesi larpata tosielämän minecraftia? Onko kulmikkaat pilarit sinun juttusi? Lähde käymään Pohjois-Irlannissa!</p>
                 <div class="button text-center flex">
                 <a href="https://fi.wikipedia.org/wiki/Giant%E2%80%99s_Causeway" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
             <!-- <div class="button text-center flex"> </div> saisi napin keskitettyä, ei varmaan kannata enää alkaa säätämään-->
             <!-- Napit keskitetty, ei ollut paha rasti. Hyvä huomio Sami!-->
 
             <!-- Nähtävyys 2 -->
-            <div class="col-md-2 p-4 nahtavyydet">
-                <h4>Nazcan linjat</h4>
+            <article class="col-md p-4 nahtavyydet">
+                <h5>Nazcan linjat</h5>
                 <img class="img-fluid" src="images/ulkomaat_kuvat/Nazcan_linjat.JPG" alt="Nazcan linjat, piirroksia aavikolla" width="1000">
                 <p>Haluatko käydä aavikolla? Pidätkö 3-vuotiaiden piirrostyylistä? Lähde katsomaan kun aikuiset ovat piirtäneet aavikolle! (Tai alienit)</p>
                 <div class="button text-center flex">
                 <a href="https://fi.wikipedia.org/wiki/Nazcan_linjat" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
             <!-- Nähtävyys 3 -->
-            <div class="col-md-2 p-4 nahtavyydet">
-                <h4>Tallinna</h4>
+            <article class="col-md p-4 nahtavyydet">
+                <h5>Tallinna</h5>
                 <img class="img-fluid" src="images/ulkomaat_kuvat/Tallinna_juhlaukko.jpeg" alt="Piirros viikinkihattuisesta juhlijasta Tallinnassa" width="1000">
                 <p>Ehdottomasti kohteista mystisin, käänteinen bermudan kolmio. Olet matkalla tänne, mutta seuraavaksi heräät kotoa.</p>
                 <div class="button text-center flex">
                 <a href="https://fi.wikipedia.org/wiki/Tallinna" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
             <!-- Nähtävyys 4 -->
-            <div class="col-md-2 p-4 nahtavyydet">
-                <h4>Google Earth</h4>
+            <article class="col-md p-4 nahtavyydet">
+                <h5>Google Earth</h5>
                 <img class="img-fluid" src="images/ulkomaat_kuvat/Google_Earth.jpg" alt="Kulmikkaita pylväitä" width="1000">
                 <p>Tässä vaihtoehdoista heittämällä paras! Voit kätevästi nauttia nähtävyyksistä oman kodin rauhassa, lempi-boxerit tukevasti jalassa.</p> 
                    <p>"Ei jonoja, ei ihmisiä, ei huolia."</p>
                 <div class="button text-center flex">
                 <a href="https://www.livescience.com/28828-10-strangest-sights-google-earth.html" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
 
             <!-- Oikealla oleva tekstikenttä -->
-            <div class="col-md-2 p-4 text-center">
+            <article class="col-md p-4 border">
                 <p>Mielenkiintoisia kohteita mielenkiintoisille seikkailijoille! 
                     Lähde vaikka Nazcan linjoilta suoraan ihmettelemään kulmikkaita tolppia Giant’s Causewayn lumoaville rannoille.
                     Tästä voit suunnata sitten Tallinnaan, jos onnistut. </p>
-                    <p>Matkanjärjestäjän suosituksesta, tätä seikkailua ei kannata aloittaa Tallinnasta.</p>
-                
-            </div>
+                <p>Matkanjärjestäjän suosituksesta, tätä seikkailua ei kannata aloittaa Tallinnasta.</p>
+            </article>
         </div>
-    </div>
     
-  
-
-    <div class="container mt-5">
-        <h3>Ravintolat</h3>
-    </div>
-    
-    <div class="container mt-4">
-        <div class="row grid gap-5 justify-content-end flex">
-    
+        <h4>Ravintolat</h4>
+   
+        <div class="row gap-5 mt-3 mb-3">
+            <!-- Poistettu md:n jälkeinen -2 ja tekstin keskitys, lisätty reunus t.Hanna -->
             <!-- Vasen tekstikenttä -->
-            <div class="col-md-2 p-4 text-center">
+            <article class="col-md p-4 border">
                 <p>Kokemuksia asiakaspalvelusta (tai sen puutteesta) Dick's Last Resortissa tai kylmänviileää, robottimaista tarjoilua
                     Robot Restaurantissa. Lopuksi vielä maha kunnolla täyteen Heart Attack Grillillä, siitä on kunnon ravintolakierrokset tehty.
                 </p>
-            </div>
+            </article>
     
             <!-- Ravintola 1 -->
-            <div class="col-md-2 p-4 ravintolat">
-                <h4>Dick's Last Resort</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Dicks_last_resort.jpg" alt="Ravintola" width="1000">
+            <article class="col-md p-4 ravintolat">
+                <h5>Dick's Last Resort</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Dicks_last_resort.jpg" alt="Ravintola" width="1024">
                 <p>Hyvä palvelu kuuluu useimpien ruokailijoiden odotuksiin uutta ravintolaa kokeillessaan.</p>
                     <p>Täällä kannattaa varautua kuulemaan tarjoilijalta kunniansa!</p>
                 <div class="button text-center flex">
                 <a href="https://en.wikipedia.org/wiki/Dick%27s_Last_Resort" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
     
             <!-- Ravintola 2 -->
-            <div class="col-md-2 p-4 ravintolat">
-                <h4>Robot Restaurant</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Robot_Restaurant_China.jpeg" alt="Ravintola" width="1000">
+            <article class="col-md p-4 ravintolat">
+                <h5>Robot Restaurant</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Robot_Restaurant_China.jpeg" alt="Ravintola" width="1024">
                 <p>Robot Restaurant -ravintolassa ruokailija voi luvan kanssa unohtaa small talkin - ruoan valmistavat ja tarjoilevat nimittäin robotit.</p>
                 <div class="button text-center flex">
                 <a href="https://www.rantapallo.fi/matkailu/etsitko-erilaista-ravintolakokemusta-taalla-palvelevat-robotit/" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
     
             <!-- Ravintola 3 -->
-            <div class="col-md-2 p-4 ravintolat">
-                <h4>Heart Attack Grill</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Heart_attack_nurse_&_bypass.jpg" alt="Ravintola" width="1000">
+            <article class="col-md p-4 ravintolat">
+                <h5>Heart Attack Grill</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Heart_attack_nurse_&_bypass.jpg" alt="Ravintola" width="1024">
                 <p>Las Vegasissa sijaitsevassa Heart Attack Grill -ravintolassa ei kaloreita lasketa - ainakaan jos haluaa säilyttää oman mielenrauhansa.</p>
                 <div class="button text-center flex">
                 <a href="https://en.wikipedia.org/wiki/Heart_Attack_Grill" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
 
             <!-- Ravintola 4 -->
-            <div class="col-md-2 p-4 ravintolat">
-                <h4>Forrest Gump -teemaravintola</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Forrest_Gump_theme_restaurant.jpg" alt="Ravintola" width="1000">
+            <article class="col-md p-4 ravintolat">
+                <h5>Forrest Gump -teemaravintola</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Forrest_Gump_theme_restaurant.jpg" alt="Ravintola" width="1024">
                 <p>Kukapa ei tuntisi Forrest Gumpia, 90-luvulla Oscareita kahminutta hittielokuvaa? 
                     Yhdysvalloissa leffajuonta osattiin hyödyntää myös ravintolabisneksessä perustamalla Bubba Gump Shrimp Company -ravintolaketju.</p>
                 <div class="button text-center flex">
                 <a href="https://www.rantapallo.fi/matkailu/tama-ravintolaketju-syntyi-hittileffan-innoittamana/" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
-    
+            </article>
         </div>
-    </div>
-    
 
-    <div class="container mt-5">
-        <h3>Aktiviteetit</h3>
-    </div>
-    
-    <div class="container mt-4">
-        <div class="row grid gap-5 justify-content-end flex">
-    
+            <h4>Aktiviteetit</h4>
+       
+        <div class="row gap-5 mt-3 mb-3">
+        
             <!-- Aktiviteetti 1 -->
-            <div class="col-md-2 p-4 aktiviteetit">
-                <h4>Arskan palvonta</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Rento_aktiviteetti_makoilija.jpeg" alt="Ranta" width="1000">
+            <article class="col-md p-4 aktiviteetit">
+                <h5>Arskan palvonta</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Rento_aktiviteetti_makoilija.jpeg" alt="Ranta" width="1024">
                 <p>Aktiivinen auringonpalvonta. Tämä sykettä nostava hurjastelu usein näyttäytyy harjaantumattomiin silmiin laiskotteluna, jota se ei ole!</p>
                 <div class="button text-center flex">
                 <a href="https://hikipedia.info/wiki/Auringonpalvonta" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
-    
+            </article>
+        
             <!-- Aktiviteetti 2 -->
-            <div class="col-md-2 p-4 aktiviteetit">
-                <h4>Vuoritorkut - torkut vuorella</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Veikka_vuorikiipeilijä_nukkuu.jpeg" alt="Ranta" width="1000">
+            <article class="col-md p-4 aktiviteetit">
+                <h5>Vuoritorkut - torkut vuorella</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Veikka_vuorikiipeilijä_nukkuu.jpeg" alt="Ranta" width="1024">
                 <p>Vuorikiipeilijöistä kuulee aina tarinoita, välillä meno äityy hurjaksikin! Kannattaa aloittaa vuoritorkkuminen, lähde löytämään oma torkkuvuoresi</p>
                 <div class="button text-center flex">
                 <a href="https://hikipedia.info/wiki/Uni" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
-    
+            </article>
+        
             <!-- Aktiviteetti 3 -->
-            <div class="col-md-2 p-4 aktiviteetit">
-                <h4>Kalastus (Salaa)</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Kalastaja.jpeg" alt="Ranta" width="1000">
+            <article class="col-md p-4 aktiviteetit">
+                <h5>Kalastus (Salaa)</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Kalastaja.jpeg" alt="Ranta" width="1024">
                 <p>Kalastus on harrastus missä hankitaan kalaa heiluttamalla erilaisia vapoja. Ääniä kalastellaan valehtelemalla. Salakalastus tapahtuu jos vaimo kieltää kalastamisen, mutta menee silti</p>
                 <div class="button text-center flex">
                 <a href="https://hikipedia.info/wiki/Salakalastus" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
+            </article>
 
             <!-- Aktiviteetti 4 -->
-            <div class="col-md-2 p-4 aktiviteetit">
-                <h4>Hengittäminen</h4>
-                <img class="img-fluid" src="images/ulkomaat_kuvat/Ilman_liikuttelua.jpeg" alt="Ranta" width="1000">
+            <article class="col-md p-4 aktiviteetit">
+                <h5>Hengittäminen</h5>
+                <img class="img-fluid" src="images/ulkomaat_kuvat/Ilman_liikuttelua.jpeg" alt="Ranta" width="1024">
                 <p>Tämä hyvin suosittu tekemisen muoto on monien harrastuksena jo pienestä pitäen ja tätä rehtiä sekä palkitsevaa aktiviteettia
                     harrastetaankin monesti läpi elämän!</p>
                 <div class="button text-center flex">
                 <a href="https://hikipedia.info/wiki/Hengitt%C3%A4minen" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
-                </div>
-            </div>
-            
+            </article>
+                
             <!-- Oikealla oleva tekstikenttä -->
-            <div class="col-md-2 p-4 text-center">
+            <article class="col-md p-4 border">
                 <p>Paras aktiviteetti lomalla on keksiä keinoja ja tekosyitä olla tekemättä mitään aktiviteetteja tai osallistua
                     tyhjänpäiväisiin kieroajeluihin monikerrosbusseilla +42c asteen helteessä, kiertoajelun vetäjän kertoessa monotonisella äänellä asioita, jotka eivät kiinnosta ketään.
                 </p>
-            </div>
-        </div>
-    </div>
+            </article>
+        </div>  
+    </section>
     
 
     <footer>
