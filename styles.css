@@ -15,6 +15,7 @@ header img {
     width: 100%;
   }
 
+ 
 nav {
     margin: 10px 0;
 }
@@ -24,7 +25,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #343a40; /* Bootstrap tumma tausta */
+    color: white;
 }
 
 nav li {
@@ -39,10 +40,11 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
-    background-color: #495057; /* Bootstrap navbar hover-väri */
-    color: white;
-}
+
+/*Navin linkkien väri*/
+a:link{color: rgb(255, 255, 255);}
+
+
 
 section {
     margin: 20px 0;
