@@ -47,8 +47,8 @@ nav li a {
 .nav-link {
     color:white;
     font-size: large;
-    margin-right: 40px;
-        }
+    margin: 0 55px 0 55px;
+}
 
 
 
