@@ -12,8 +12,7 @@
 
 
     <header>
-        <!-- Logo siirretty images-kansioon -Hanna 
-        Logosta tehty linkki etusivulle -Saija -->
+
         <div class="container d-flex align-items-center justify-content-center">    
             <a href="index.html">    
                 <img src="images/logo.png" alt="Logo" class="mt-2 mb-2">
@@ -50,9 +49,9 @@
         </div>
     </nav>
 
-    <!-- Pääkontti --> <!-- Muutettu pääkontiksi, asetukset täsmäämään ja semanttiseksi (article ja section) -->
+    <!-- Pääkontti -->
     <section class="container mt-4">
-        <h3 class="erikoisimmat">Ulkomaiden ihmeitä</h3>
+        <h3>Ulkomaiden ihmeitä:</h3>
         <h4>Nähtävyydet</h4>
     
         <div class="row gap-5 mt-3 mb-3">
@@ -65,8 +64,6 @@
                     <a href="https://fi.wikipedia.org/wiki/Giant%E2%80%99s_Causeway" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
                 </div>
             </article>
-            <!-- <div class="button text-center flex"> </div> saisi napin keskitettyä, ei varmaan kannata enää alkaa säätämään-->
-            <!-- Napit keskitetty, ei ollut paha rasti. Hyvä huomio Sami!-->
 
             <!-- Nähtävyys 2 -->
             <article class="col-md p-4 nahtavyydet">
@@ -77,6 +74,7 @@
                     <a href="https://fi.wikipedia.org/wiki/Nazcan_linjat" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
                 </div>
             </article>
+
             <!-- Nähtävyys 3 -->
             <article class="col-md p-4 nahtavyydet">
                 <h5>Tallinna</h5>
@@ -86,6 +84,7 @@
                     <a href="https://fi.wikipedia.org/wiki/Tallinna" class="btn btn-dark" role="button" target="_blank">Lue lisää</a>
                 </div>
             </article>
+
             <!-- Nähtävyys 4 -->
             <article class="col-md p-4 nahtavyydet">
                 <h5>Google Earth</h5>
@@ -99,6 +98,7 @@
 
             <!-- Oikealla oleva tekstikenttä -->
             <article class="col-md p-4 border">
+                <h6>Lyhyesti:</h6>
                 <p>Mielenkiintoisia kohteita mielenkiintoisille seikkailijoille! 
                     Lähde vaikka Nazcan linjoilta suoraan ihmettelemään kulmikkaita tolppia Giant’s Causewayn lumoaville rannoille.
                     Tästä voit suunnata sitten Tallinnaan, jos onnistut. </p>
@@ -109,9 +109,10 @@
         <h4>Ravintolat</h4>
    
         <div class="row gap-5 mt-3 mb-3">
-            <!-- Poistettu md:n jälkeinen -2 ja tekstin keskitys, lisätty reunus t.Hanna -->
+
             <!-- Vasen tekstikenttä -->
             <article class="col-md p-4 border">
+                <h6>Lyhyesti:</h6>
                 <p>Kokemuksia asiakaspalvelusta (tai sen puutteesta) Dick's Last Resortissa tai kylmänviileää, robottimaista tarjoilua
                     Robot Restaurantissa. Lopuksi vielä maha kunnolla täyteen Heart Attack Grillillä, siitä on kunnon ravintolakierrokset tehty.
                 </p>
@@ -207,19 +208,46 @@
                 
             <!-- Oikealla oleva tekstikenttä -->
             <article class="col-md p-4 border">
+                <h6>Lyhyesti:</h6>
                 <p>Paras aktiviteetti lomalla on keksiä keinoja ja tekosyitä olla tekemättä mitään aktiviteetteja tai osallistua
                     tyhjänpäiväisiin kieroajeluihin monikerrosbusseilla +42c asteen helteessä, kiertoajelun vetäjän kertoessa monotonisella äänellä asioita, jotka eivät kiinnosta ketään.
                 </p>
             </article>
         </div>  
-    </section>
+    </section> <!-- Kontin loppu -->
     
 
     <footer>
         <p>&copy; 2024 Matkailusivusto. Kaikki oikeudet pidätetään.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Palaa ylös">^</button>
+
+    <script>
+        // Funktio, joka vierittää sivun ylös
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Safarille
+            document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, and Opera
+        }
+    
+        // Näytä tai piilota palaa ylös -nappi kun vieritellään
+        window.onscroll = function() {
+            scrollFunction();
+        }
+    
+        function scrollFunction() {
+            var btn = document.getElementById("scrollToTopBtn");
+    
+            // Näytä nappi, kun vieritellään sivulla
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+    </script>
+    
 </body>
 </html>

@@ -6,10 +6,13 @@ body {
 header {
     text-align: center;
     padding: 10px;
-    background-color: #ffffff; /* Suunnitelman mukainen */
+    background-color: #ffffff;
 }
 
-/* logon koon säätäminen kohdilleen tästä */
+h6 {
+    font-weight: bold;
+}
+
 header img {
     max-width: 150px;
     width: 100%;
@@ -43,7 +46,6 @@ nav li a {
 }
 
 
-/*Navin linkkien väri.*/
 .nav-link {
     color:white;
     font-size: large;
@@ -51,16 +53,10 @@ nav li a {
 }
 
 
-
 section {
     margin: 20px 0;
 }
 
-/* tässä on ID */
-#ulkomaat img {
-    max-width: 250px;
-    height: auto;
-}
 
 .nahtavyydet {
     background-color: #FF9999;
@@ -74,10 +70,31 @@ section {
     background-color: #66CCFF;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
     padding: 10px;
-    background-color: #000000; /* Suunnitelman mukainen */
-    color: #ffffff; /* Suunnitelman mukainen */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+ #scrollToTopBtn:hover {
+    background-color: #2b2b2b;
+}
+
+footer {
+    text-align: center!important;
+    font-size: large!important;
+    display: flex; 
+    align-items: center!important; 
+    justify-content: center!important;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
 }
